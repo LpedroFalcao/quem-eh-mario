@@ -2,14 +2,36 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
+    text-decoration: none;
 }
+button{
+    border: 0;
+    background-color:#1E1F28 ;
+    padding: 50px;
+}
+#Reload{
+    
+    bottom: 0;
+    width: 200px;
+    margin: 15px auto;
+    padding: 25px;
+    text-align: center;
+    border-radius: 35%;
+    background-color: green;
+}
+body{
+    background-color: #1E1F28;
+}
+
 .game-board{
     width: 80%;
     height: 500px;
-    border: 1px solid black;
+    border-bottom: 15px solid green;
     margin: 0 auto;
     position: relative;   
     overflow: hidden;
+    background: linear-gradient(#87CEEB, #E0F6FF);
 }
 
 .pipe{
@@ -26,6 +48,11 @@
 }
 .jump{
     animation: Qmario-jump 500ms ease-out ;
+}
+.clouds{
+    position: absolute;
+    width: 550px;
+    animation: clouds-moviment 10s infinite linear;
 }
 @keyframes pipe-animation{
     from{right: -80px;}
@@ -48,4 +75,8 @@
    100%{
     bottom: 0;
    }
+}
+@keyframes clouds-moviment {
+    from{right: -80px;}
+    to{right: 100%;}
 }
