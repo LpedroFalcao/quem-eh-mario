@@ -18,7 +18,11 @@
     width: 80px;
     animation: pipe-animation 2s infinite linear;
 }
-
+.Qmario{
+    width: 150px;
+    bottom: 0;
+    position: absolute;
+}
 @keyframes pipe-animation{
     from{right: -80px;}
     to{right: 100%;}
